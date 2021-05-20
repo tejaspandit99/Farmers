@@ -1,0 +1,86 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Farmers.css">
+</head>
+<body>
+    <script>
+     function myfunc(){
+         var p1= document.getElementById("password").value;
+          var p2=document.getElementById("confirm_password").value;       
+         if(p1==""||!p1)
+         {
+             document.getElementById("message").innerHTML="** Please Fill Password";
+             return false;
+         }
+         else if(p1!=p2)
+         {
+            return false;
+         }
+
+         
+     }
+        
+    </script>
+    <script>
+         var check = function () {
+                if (document.getElementById('password').value ==
+                        document.getElementById('confirm_password').value) {
+                    document.getElementById('message').style.color = 'green';
+                    document.getElementById('message').innerHTML = ' Matching';
+                } else {
+                    document.getElementById('message').style.color = 'red';
+                    document.getElementById('message').innerHTML = ' Not matching';
+                }
+            }
+        
+        
+        </script>
+    <section class="container-fluid">
+    <section class="row justify-content-center">
+<section class="col-12 col-sm-6 col-md-3">
+    <img src="User2.png" class="bg">
+    <form onsubmit="return myfunc()" action="register" method="post" class="form-container">
+        <h4 class="text-center font-weight-bold">Farmers register</h4>
+        <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Enter name"
+                   pattern="^[a-zA-Z][a-zA-Z ]*$" title="enter proper name">
+           </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Aadharcard" name="adharcard"
+               pattern="[0-9]{12}" title="enter 12 digits of aadhar"    >
+        </div>
+        
+        <div class="form-group">
+            <input type="password" class="form-control " placeholder="Password" id="password" name="password" onkeyup='check();' >
+         
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control " placeholder="Confirm Password" id="confirm_password" name="confirm_password" 
+                   onkeyup='check();' >
+         <span id="message"></span>
+        </div>
+        
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Mark as read</label>
+        </div>
+        <input type="submit" class="btn btn-primary btn-block button" value="Submit"><br/>
+        <h6>Not a farm<a href="customers-login.html" style="text-decoration: none;">
+            Customer's Login</a></h6>
+      </form>
+</section>
+
+
+</section>
+
+</section>
+</body>
+</html>

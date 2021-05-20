@@ -1,0 +1,525 @@
+      
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="product.css">;
+</head>
+
+<style>
+	body
+	{
+		background-color: #f1dfd1;
+background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+	}
+
+div.gallery {border-radius: 25px;
+padding:10;
+background-color: orange;
+  width: 270px;
+  height: 375px;
+
+  border: 10px solid black;
+}
+
+div.gallery:hover {
+  border: 1px solid black;
+}
+
+div.gallery img {
+	border-radius: 25px;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+ position: center;
+  width: 100%;
+  height: auto;
+}
+
+
+div.desc {
+  
+  padding: 15px;
+  text-align: center;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-black bg-black">
+   <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler navbar navbar-dark bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+        <a class="nav-link ml-5" href="">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ml-5">
+        <a class="nav-link" href=" product_form.html">Add products</a>
+      </li>
+      <li class="nav-item dropdown ml-5">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
+           aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#Vegitable">Vegitable</a>
+          <a class="dropdown-item" href="#Pulses">Pulses</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">others</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav><br/><br/>
+ <section id="Vegitable">
+     <center> <b><h1 class="text-uppercase"> Vegitable</h1></b></center><br/><br/>
+<div class="responsive">
+  <div class="gallery">
+  	<a target="_blank" href="Project Images/onion.jpg">
+      <img src="Project Images/onion.jpg" width="600" height="400" >
+      </a>
+     
+    <div class="desc"><b>Onion</div>
+    	<div class=desc"><b><center>Price:</center></b></div>
+
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+  	<a target="_blank" href="Project Images/potato.jpg">
+      <img src="Project Images/potato.jpg" width="600" height="400">
+  </a>
+    <div class="desc"><b>Potato</div>
+    	<div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+  	<a target="_blank" href="Project Images/garlic.jpg">
+      <img src="Project Images/garlic.jpg" width="600" height="400">
+</a>
+    <div class="desc"><b>Garlic</div>
+    	<div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+   <a target="_blank" href="Project Images/shimla.jpg">
+      <img src="Project Images/shimla.jpg"width="600" height="400">
+   </a>
+    <div class="desc"><b>Capsicum</div>
+    	<div class=desc"><b><center>Price:</center></b></div>
+      </div>
+</div></section>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  
+</div></style>
+
+</body>
+</html>
+
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  border: 5px solid black;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 250;
+  height: 250;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.item-image-size{
+    height: 200px;
+    width:300px;
+    padding: 5px;
+}
+</style>
+</head>
+<body>
+
+  <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/bhindi.jpg">
+        <img src="Project Images/bhindi.jpg" class="item-image-size">
+    </a>
+    <div class="desc"><b>Okra</b></div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/carrot.jpg">
+      <img src="Project Images/carrot.jpg" width="250" height="250">
+    </a>
+    <div class="desc"><b>Carrot</b></div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/pumpkin.jpg">
+      <img src="Project Images/pumpkin.jpg" width="250" height="250">
+    </a>
+    <div class="desc"><b>Pumpkin</b></div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/spinach.jpg">
+      <img src="Project Images/spinach.jpg"width="250" height="250">
+    </a>
+    <div class="desc"><b>Spinach</b></div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  
+</div>
+
+</body>
+<body>
+
+  <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/Beetroot.jpg">
+      <img src="Project Images/Beetroot.jpg" width="250" height="250">
+    </a>
+    <div class="desc">Beetroot</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/Bitter-Gourd.jpg">
+      <img src="Project Images/Bitter-Gourd.jpg" width="250" height="250">
+    </a>
+    <div class="desc">Bitter-Gourd</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/Broccoli.jpg">
+      <img src="Project Images/Broccoli.jpg" width="250" height="250">
+    </a>
+    <div class="desc">Broccoli</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/cabbage.jpg">
+      <img src="Project Images/cabbage.jpg" class="item-image-size">
+    </a>
+    <div class="desc">Cabbage</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  
+</div>
+
+</body>
+<body>
+
+  <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/Cauliflower.jpg">
+      <img src="Project Images/Cauliflower.jpg" width="250" height="250">
+    </a>
+    <div class="desc">Cauliflower</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/Drum-stick.jpg">
+      <img src="Project Images/Drum-stick.jpg" width="250" height="250">
+    </a>
+    <div class="desc">Drumstick</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/Greenchilli.jpg">
+      <img src="Project Images/Greenchilli.jpg" width="250" height="250">
+    </a>
+    <div class="desc">Greenchilli</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/Peas.jpg">
+      <img src="Project Images/Peas.jpg"width="250" height="250">
+    </a>
+    <div class="desc">Peas</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  
+</div>
+
+</body>
+<body>
+
+  <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/Radish.jpg">
+      <img src="Project Images/Radish.jpg" width="250" height="250">
+    </a>
+    <div class="desc">Radish</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/Redchilli.jpg">
+      <img src="Project Images/Redchilli.jpg" width="250" height="250">
+    </a>
+    <div class="desc">Redchilli</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/Ridged-Gourd.jpg">
+      <img src="Project Images/Ridged-Gourd.jpg" width="250" height="250">
+    </a>
+    <div class="desc">Ridged-Gourd</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+     <a target="_blank" href="Project Images/tomato.jpg">
+         <img src="Project Images/tomato.jpg" style= "height:cover;">
+          </a>
+    <div class="desc">Tomato</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  
+</div>
+
+</body>
+<body>
+<section id="Pulses">
+    <center> <b><h1 class="text-uppercase">Pulses</h1></b></center><br/><br/>
+  <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/channa.jpg">
+      <img src="Project Images/channa.jpg" width="250" height="250">
+    </a>
+    <div class="desc">ChickPeas</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/maize.jpg">
+      <img src="Project Images/maize.jpg" width="250" height="250">
+    </a>
+    <div class="desc">Maize</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/moong.jpg">
+      <img src="Project Images/moong.jpg" width="250" height="250">
+    </a>
+    <div class="desc">Moong</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/Soyabean.jpg">
+      <img src="Project Images/Soyabean.jpg"width="250" height="250">
+    </a>
+    <div class="desc">Soyabean</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div></section>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  
+</div>
+
+</body>
+<body>
+
+  <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/Rice.jpg">
+      <img src="Project Images/Rice.jpg" width="250" height="250">
+    </a>
+    <div class="desc">Rice</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/Wheat.jpg">
+      <img src="Project Images/Wheat.jpg" width="250" height="250">
+    </a>
+    <div class="desc">Wheat</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/Mustard.jpg">
+      <img src="Project Images/Mustard.jpg" width="250" height="250">
+    </a>
+    <div class="desc">Mustard</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Project Images/Tuar.jpg">
+      <img src="Project Images/Tuar.jpg"width="250" height="250">
+    </a>
+    <div class="desc">Tuar</div>
+    <div class=desc"><b><center>Price:</center></b></div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  
+</div>
+
+</body>
+
+</html>
