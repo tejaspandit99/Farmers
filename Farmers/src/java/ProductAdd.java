@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import DB.DBConnector;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
@@ -63,7 +64,7 @@ public class ProductAdd extends HttpServlet {
                 pst.setString(8, Quantity);
                 result = pst.executeUpdate();
                 if (result > 0) {
-                    resp.sendRedirect("product.html");
+                    resp.sendRedirect("product_farmer.jsp");
                     out.println("<h1>image inserted</h1>");
                 }
             } catch (SQLException e) {
@@ -73,7 +74,7 @@ public class ProductAdd extends HttpServlet {
                 out.println("<span style=color:red>Unable to Adding Product !!!</span>");
                 out.println("</body>");
                 out.println("</html>");
-                RequestDispatcher rd = request.getRequestDispatcher("/product_form.html");
+                RequestDispatcher rd = request.getRequestDispatcher("product_form.html");
                 rd.include(request, resp);
                 System.out.println(e);
             }
