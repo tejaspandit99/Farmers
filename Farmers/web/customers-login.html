@@ -15,20 +15,22 @@
     <section class="row justify-content-center">
 <section class="col-12 col-sm-6 col-md-3">
     <img src="User2.png" class="bg">
-    <form action="LoginServlet" method="post" class="form-container">
+    <form action="Customer_Login" method="post" class="form-container">
         <h4 class="text-center font-weight-bold">Customers login</h4>
+        <div>
+        <input type="text" class="form-control"
+                   id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter adhar number"
+                   name="customer_adhar" >
+          </div><br/>
         <div class="form-group">
-            <input type="text" class="form-control" name="name" placeholder="Enter name">
-          </div>
-        <div class="form-group">
-            <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
+            <input type="password" class="form-control" id="exampleInputPassword1" name="customer_password" placeholder="Password">
         </div>
         <div class="form-group form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Mark as read</label>
         </div>
         <input type="submit" class="btn btn-primary btn-block" value="Submit"><br/>
-         <h6>Not a member?<a href="customers-register.html" style="text-decoration: none;">
+         <h6>Not a member?<a href="Payment.jsp" style="text-decoration: none;">
             Click here</a></h6>
       </form>
      
