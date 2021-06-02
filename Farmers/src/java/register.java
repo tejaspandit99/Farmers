@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import DB.DBConnector;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.ResultSet;
@@ -27,6 +28,7 @@ public class register extends HttpServlet {
       String name = req.getParameter("name");
         String password = req.getParameter("password");
         String adharcard = req.getParameter("adharcard");
+        String contact=req.getParameter("contact");
         HttpSession session = req.getSession(true);
      
         System.out.println(name);
@@ -39,7 +41,7 @@ public class register extends HttpServlet {
             ResultSet rs = null;
             st = DBConnector.getStatement();
             
-            String query ="Insert into kissan values('"+name+"','"+adharcard+"','"+password+"')" ;
+            String query ="Insert into kissan values('"+name+"','"+adharcard+"','"+contact+"','"+password+"')" ;
             System.out.println(query);
             int i= st.executeUpdate(query);
             if ( i>0 ) {
