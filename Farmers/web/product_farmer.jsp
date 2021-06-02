@@ -143,10 +143,8 @@ div.desc {
     </ul>
   </div>
 </nav><br/><br/>
-<h3>
-  Welcome
-  <small class="text-muted"></small>
-</h3>
+
+
  <section id="Vegetable">
      <center> <b><h1 class="text-uppercase"> Vegetable</h1></b></center><br/><br/>
      <%
