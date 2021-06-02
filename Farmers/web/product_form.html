@@ -14,7 +14,7 @@ and open the template in the editor.
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="Farmers.css">
+    <link rel="stylesheet" type="text/css" href="product.css">
    
 </head>
     <body>
@@ -22,7 +22,7 @@ and open the template in the editor.
     <section class="row justify-content-center">
 <section class="col-12 col-sm-6 col-md-3">
     <img src="User2.png" class="bg">
-        <form  action="ProductAdd" method="post" enctype = "multipart/form-data">
+        <form  action="ProductAdd" method="post" class="form-container" enctype = "multipart/form-data">
         <h4 class="text-center font-weight-bold">Add Products</h4>
         <div class="form-group">
             <input type="text" class="form-control" placeholder="Enter product name"
@@ -37,19 +37,20 @@ and open the template in the editor.
             <input type="number" min="1" name="Quantity" oninvalid="this.setCustomValidity('Please enter Fixed Quantity')" oninput="setCustomValidity('')"
                            placeholder="Enter Fixed Quantity" required>
 
-        </div><br/>
+        </div>
         <select name="category" class="form-select" aria-label="Enter Product's category" 
                 required oninvalid="this.setCustomValidity('Please choose Category')" oninput="setCustomValidity('')">
   <option selected>Enter Product's category</option>
   <option value="Vegetable">Vegetable</option>
-  <option value="Fruit">Fruit</option>
-  <option value="Pulse">Pulse</option>
-  <option value="other">Pulse</option>
+  <option value="Fruits">Fruits</option>
+  <option value="Pulses">Pulses</option>
+  <option value="others">Others</option>
         </select>
-        &nbsp;&nbsp;
-        <input type="file" name="image" accept=".png,.jpg,.jpeg" required>
+        &nbsp;&nbsp;<br/><br/>
+        <input type="file" name="image" accept=".png,.jpg,.jpeg" required><br/><br/>
+        <label>End Time for Bid</label>
         <input type="datetime-local" class="form-group" name="endTime" placeholder="Time for Bid">
-                    <label>End Time for Bid</label>
+                    
         
         <input type="submit" class="btn btn-primary btn-block button" value="Submit"><br/>
        
