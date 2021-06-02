@@ -1,3 +1,5 @@
+package DB;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -15,7 +17,7 @@ import java.sql.Statement;
  * @author HP
  */
 //Type 4 connectivity
-class DBConnector {
+public class DBConnector {
     static Connection con = null;
     static Statement st = null;
 
